@@ -1,0 +1,7 @@
+FROM jenkins/jenkins
+MAINTAINER viky
+
+USER root
+RUN apt-get update
+RUN apt-get install -y git maven
+ADD https://get.jenkins.io/war-stable/2.375.2/jenkins.war /
